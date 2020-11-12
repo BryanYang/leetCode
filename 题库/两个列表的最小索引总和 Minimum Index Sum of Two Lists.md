@@ -61,7 +61,58 @@ var findRestaurant = function(list1, list2) {
 
 提交通过
 
+```java
+public class Solution {
+    public String[] findRestaurant(String[] list1, String[] list2) {
+        HashMap < String, Integer > map = new HashMap < String, Integer > ();
+        for (int i = 0; i < list1.length; i++)
+            map.put(list1[i], i);
+        List < String > res = new ArrayList < > ();
+        int min_sum = Integer.MAX_VALUE, sum;
+        for (int j = 0; j < list2.length && j <= min_sum; j++) {
+            if (map.containsKey(list2[j])) {
+                sum = j + map.get(list2[j]);
+                if (sum < min_sum) {
+                    res.clear();
+                    res.add(list2[j]);
+                    min_sum = sum;
+                } else if (sum == min_sum)
+                    res.add(list2[j]);
+            }
+        }
+        return res.toArray(new String[res.size()]);
+    }
+}
 
+```
+复杂度分析
+
+时间复杂度：O(l_1+l_2)O(l 
+1
+​	
+ +l 
+2
+​	
+ )。list2list2 中的每一个字符串都会在 list1list1 的映射表中查找，l_1l 
+1
+​	
+  和 l_2l 
+2
+​	
+  分别是 list1list1 和 list2list2 的长度。
+
+空间复杂度：O(l_1 \times x)O(l 
+1
+​	
+ ×x)。hashmaphashmap 的大小为 l_1 \times xl 
+1
+​	
+ ×x，其中 xx 是字符串的平均长度。
+
+作者：LeetCode
+链接：https://leetcode-cn.com/problems/minimum-index-sum-of-two-lists/solution/liang-ge-lie-biao-de-zui-xiao-suo-yin-zong-he-by-l/
+来源：力扣（LeetCode）
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
 
 
