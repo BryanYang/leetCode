@@ -57,7 +57,7 @@ public class Solution {
         for (int i = 0; i < nums.length; i++) {
             while (!stack.empty() && nums[i] > stack.peek())
                 map.put(stack.pop(), nums[i]);
-            // 这一行不对吧
+            // 这一行不对吧，push进去之后，要给栈加个排序，从小到大
             stack.push(nums[i]);
         }
         while (!stack.empty())
