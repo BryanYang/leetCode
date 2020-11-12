@@ -77,3 +77,25 @@ var maxProfit = function(prices) {
 ```
 
 这道题可以好好想想。
+
+### 心得
+
+最大的收获就是 所有上坡的趋势都收获到：
+因此只要 n+1天比n天大。就把这个区间+上。
+可以考虑股票是一根波浪线，每个交易日是个节点。2个相邻节点向上，则标红。
+然后你拉直这根线(连续上涨的节点会连起来，相当于第n天买，第n+x天卖)
+
+```java
+public int maxProfit(int[] arr) {
+        if (arr == null || arr.length <= 1) return 0;
+
+        int ans = 0;
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] > arr[i-1]) {  // 卖出有利可图
+                ans += (arr[i] - arr[i-1]);
+            }
+        }
+
+        return ans;
+    }
+```
