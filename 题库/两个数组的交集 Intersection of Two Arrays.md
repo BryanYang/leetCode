@@ -41,6 +41,10 @@ var intersection = function(nums1, nums2) {
 提交通过，性能可以。
 
 
+同上一题，
+区别，用set 存储结果，
+先遍历nums1, 把数字作为key, 数字出现的次数作为value,
+遍历nums2, 数字对应的value有值，插入set.
 
 
 
