@@ -36,3 +36,5 @@ var judgeCircle = function(moves) {
 ```
 
 提交通过。
+
+上1下-1左2右-2。加起来是0就是圈
