@@ -64,5 +64,5 @@ var distributeCandies = function(candies) {
 
 
 
-
+先sort,一个for循环，如果和上个数不同。就给妹妹。直到一半。不过，通过上面方法更简单。本质上就是最小的不同数
 
