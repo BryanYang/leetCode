@@ -87,6 +87,20 @@ var findContentChildren = function(g, s) {
 满足的最大数，那就是看饼干有多少大于等于孩子饥饿就行。
 所以上述最后的算法ok
 
+如果问怎么分，用单次循环双指针也可以解决。只要有顺序，都可以用双指针，减少for循环嵌套。(因为每次新的迭代从上次位置继续就行，不需要从0开始)
+
+```javascript
+for (i=0,j=0; i < g.length && j < s.length) {
+  if (g[i] <= s[j]) {
+    result.push([i, j]);
+    i++;
+    j++
+  } else {
+    j++;
+  }
+}
+```
+
 
 
 
