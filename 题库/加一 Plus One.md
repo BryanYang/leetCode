@@ -69,3 +69,6 @@ var plusOne = function(digits) {
 ```
 
 相比于思路1，这里代码更加简洁易懂，用到了`ES6`的`...`运算符，也可以使用`concat`或者`unshift`。
+
+上面正解。
+应该是不让用join变成字符串再转换整，再加1再split
