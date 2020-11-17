@@ -54,7 +54,7 @@ var wordPattern = function(pattern, str) {
 
 
 
-
+使用map如上
 
 
 
