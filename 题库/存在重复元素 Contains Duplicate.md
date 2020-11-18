@@ -65,3 +65,4 @@ var containsDuplicate = function(nums) {
 
 
 
+就怕不让你用set呀
