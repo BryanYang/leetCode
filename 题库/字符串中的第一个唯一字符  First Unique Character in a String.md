@@ -62,3 +62,7 @@ var firstUniqChar = function(s) {
 ```
 
 这个思路很不错。
+
+上面，你这个indexOf 和 lastIndexOf 的性能绝逼会被诟病。
+
+正解就是建立map.
