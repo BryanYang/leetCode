@@ -38,3 +38,6 @@ var reverseStr = function(s, k) {
 ```
 
 提交通过。
+
+利用字符串的reverse 和数组的split
+
