@@ -71,6 +71,12 @@ var checkRecord = function(s) {
 方法看起来能简洁一点吧。
 
 
+如果数字成立用数字和挺好，但这个题不行。不成立。
+P 是0 A -1 L -0.9，
+
+然后加起来 <= -2 即可。
+
+所以一个循环统计出现A，L次数吧
 
 
 
@@ -79,4 +85,4 @@ var checkRecord = function(s) {
 
 
 
-
+    
