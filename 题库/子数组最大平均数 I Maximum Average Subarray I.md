@@ -69,3 +69,5 @@ var findMaxAverage = function(nums, k) {
 ```
 
 这个思路很好，`k`项求和如同火车一般不断开向末尾。
+
+一个for 循环，滑动k个数字。缓存sum
