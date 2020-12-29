@@ -73,3 +73,6 @@ var nextGreatestLetter = function(letters, target) {
 
 提交通过，不过有意思的是这道题直接循环寻找目标值速度要快的多。
 
+
+###
+倒序找不就行了
