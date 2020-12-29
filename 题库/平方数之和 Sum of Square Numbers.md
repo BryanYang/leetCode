@@ -58,3 +58,5 @@ var judgeSquareSum = function(c) {
 
 简单明了。
 
+###
+math.sqrt
