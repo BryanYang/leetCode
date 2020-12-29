@@ -72,3 +72,5 @@ var checkPerfectNumber = function(num) {
 
 一次循环，循环的时候就求和，然后循环最大值为num的开平方。
 
+### 循环最大值这个优化
+
